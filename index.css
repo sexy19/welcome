@@ -1,7 +1,10 @@
 body {
+	position: relative;
+	height: 100vh;
 	overflow: hidden;
 }
 
+/*
 .sexy {
 	font-family: 'Pinyon Script';
 	font-size: 56px;
@@ -17,10 +20,30 @@ body {
 	padding-left: 170px;
 	margin-top: -30px;
 }
+*/
 
-#elipse {
+.contenido {
+	position: absolute;
+	top: 35%;
+	width: 100%;
+	text-align: center;
+}
+
+.sexy19-wrapper {
+	margin-bottom: 20px;
+}
+
+.elipse {
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	bottom: -115%;
+    left: 29%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(elipse.png);
 	z-index: -99999 !important;
-    -webkit-animation: rotation 2s infinite linear;
+    -webkit-animation: rotation 3s infinite linear;
 }
 
 @-webkit-keyframes rotation {
@@ -32,3 +55,4 @@ body {
 		}
 }
 }
+
